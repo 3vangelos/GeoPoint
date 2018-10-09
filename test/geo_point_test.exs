@@ -15,7 +15,7 @@ defmodule GeoPointTest do
   end
 
   test "create GeoPoint from List" do
-    point = GeoPoint.from([1.0,2.0])
+    point = GeoPoint.from([1.0, 2.0])
     assert point.lat == 1.0
     assert point.lng == 2.0
   end

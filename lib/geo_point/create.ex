@@ -1,7 +1,9 @@
 defmodule GeoPoint.Create do
+  @moduledoc false
 
   def from(string) when is_bitstring(string) do
-    String.split(string, ",")
+    string
+    |> String.split(",")
     |> Enum.map(&String.to_float/1)
     |> from()
   end
